@@ -1,0 +1,75 @@
+Termen - http://www.w3schools.com en verder internet.
+
+Responsive web(layout)design: 
+
+Responsive webdesign is een soort van benadering waarbij er naar word gestreefd naar een 
+breed scala van apparaten, apparaten zoals Tablets, Smartphones en Desktops. Die zijn 
+er in alle soorten en maten. Een eerder genoemd "Responsive layout" zorgt ervoor dat 
+op elk apparaat (Tablet, Smartphone en Desktop) alles het zelfde wordt weergegeven. 
+
+Het schaalt mee met hem scherm, dus ook als je het venster verkleint.
+
+Een responsive website past zichzelf aan aan de omgeving waarin hij 
+getoond wordt met behulp van flexibele grids en afbeeldingen en media querys.
+
+Een mediaquery ziet er vervolgens zo uit:
+
+
+______________________________
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) 
+______________________________
+
+
+Design:
+
+Qua design zijn er veel manieren om een platform/website op te maken. 
+
+Bijvoorbeeld:
+- Font (Kleur, Type, Family, Dikte, Grootte etc.)
+
+	~ Kleur
+	~ Type
+	~ Family
+	~ Dikte
+	~ Grootte
+
+- Opmaak uiterlijk (Navigatie bar, Logo, Formulieren)
+
+	~ Navigatie bar
+	~ Logo
+	~ Formulieren
+	~ Margins/Paddings (Nette Opmaak voor Tekst) 
+	~ Backgrounds
+
+- Effecten
+
+	~ Transition (Vloeiende overgang tussen de menu's)
+	~ Easing 
+	~ Kleuren
+	~ Schaduwen
+
+Korte informatie over Flat Design: 
+
+Flat Design is een minimalistisch design die het gebruiksvriendelijk maakt voor iedereen. Het beschikt over schone, open ruimte
+scherpe randen, en felle gedimde kleuren en 2D illustraties.
+
+Korte informatie over 3D design:
+
+3D is een design die recht op je af komt, dat wordt veroorzaakt door onder anderen de Schaduwen die om de randen zichtbaar zijn, de 
+buttons die wat rondere hoeken hebben (border-radius), onscherpere lijnen/hoeken en drie dimensionale afbeeldingen.
+
+
+Ook met Design is het belangrijk dat je website matched, geen felle kleuren.
+
+
+Animatie:
+
+Er zijn veel animaties te vinden op een site. 
+Hieronder een paar voorbeelden: 
+	~ Slideshow
+	~ Easing 
+
+
+	
