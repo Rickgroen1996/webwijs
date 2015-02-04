@@ -1,6 +1,11 @@
-<?php get_header(); ?>
-
-	<main role="main">
+<!-- Get header, is eigenlijk de balk aan de zijkant -->
+<?php get_header(); ?> 
+<main role="main">
+	<div class="content">
+		<nav class="nav" role="navigation">
+			<!-- Navigation rechtboven -->
+			<?php wp_nav_menu(); ?>
+		</nav>
 	<!-- section -->
 	<section>
 
@@ -57,6 +62,7 @@
 	<?php endif; ?>
 
 	</section>
+	</div>
 	<!-- /section -->
 	</main>
 

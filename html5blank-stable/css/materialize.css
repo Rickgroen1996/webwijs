@@ -5026,8 +5026,7 @@ nav {
       -o-transition: background-color 0.3s;
       -ms-transition: background-color 0.3s;
       transition: background-color 0.3s; }
-      nav ul li:hover, nav ul li.active {
-        background-color: rgba(0, 0, 0, 0.1); }
+     
     nav ul a {
       font-size: 1rem;
       color: #fff;
@@ -6579,8 +6578,7 @@ ul.table-of-contents a {
       float: none;
       padding: 0 15px;
       width: 240px; }
-      ul.side-nav li:hover, ul.side-nav li.active {
-        background-color: #ddd; }
+     
     ul.side-nav a {
       color: #444; }
  }
@@ -6620,8 +6618,7 @@ ul.side-nav.full, ul.side-nav.fixed {
     -o-transition: background-color 0s;
     -ms-transition: background-color 0s;
     transition: background-color 0s; }
-    ul.side-nav.full li:hover, ul.side-nav.full li.active, ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
-      background-color: #ddd; }
+   
   ul.side-nav.full a, ul.side-nav.fixed a {
     display: block;
     padding: 0 15px;
