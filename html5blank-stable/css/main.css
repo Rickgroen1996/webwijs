@@ -1,18 +1,121 @@
-section {
-	padding-left: 50px;
-	
+ /*---------------------------------------------------Algemeen---------------------------------------------------*/
+ 
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ section {
+     padding-left: 50px;
+ }
+ header, main, footer {
+     padding-left: 240px;
+ }
+ /*------------------------------------------------Menu aan zijkant---------------------------------------------- */
+ .button-collapse {
+     display: none;
+ }
+.categories {
+	font-size: 20px;
 }
-header, main, footer {
-	padding-left: 240px;
-}
-.button-collapse {
-	display: none;
-}
-@media only screen and (max-width:1000px) {
-	header, main, footer, section {
-	padding-left: 0px;
-	}
-	section {
-		padding: 20px;
-	}
-}
+ @media only screen and (max-width: 992px) {
+     ul.side-nav {
+         position: fixed;
+         width: 240px;
+         left: -250px;
+         top: 0;
+         height: 100%;
+         height: calc(100% + 60px);
+         padding-bottom: 60px;
+         background-color: #FFF;
+         z-index: 999;
+         will-change: left;
+     }
+     ul.side-nav.right-aligned {
+         will-change: right;
+         right: -250px;
+         left: auto;
+     }
+     ul.side-nav .collapsible {
+         margin: 0;
+     }
+     ul.side-nav li {
+         float: none;
+         padding: 0 15px;
+         width: 240px;
+     }
+     ul.side-nav a {
+         color: #444;
+     }
+ }
+ ul.side-nav.fixed {
+     position: fixed;
+     width: 240px;
+     left: -250px;
+     top: 0;
+     margin: 0;
+     padding-bottom: 60px;
+     height: 100%;
+     height: calc(100% + 60px);
+     background-color: #FFF;
+     z-index: 999;
+     will-change: left;
+ }
+ ul.side-nav.fixed.right-aligned {
+     will-change: right;
+     right: -250px;
+     left: auto;
+ }
+ ul.side-nav.fixed .collapsible {
+     margin: 0;
+ }
+ ul.side-nav.fixed li {
+     float: none;
+     line-height: 64px;
+     padding: 0;
+     width: 240px;
+     -webkit-transition: background-color 0s;
+     -moz-transition: background-color 0s;
+     -o-transition: background-color 0s;
+     -ms-transition: background-color 0s;
+     transition: background-color 0s;
+ }
+  ul.side-nav.fixed li:hover {
+  	background-color: #ddd;
+  }
+ ul.side-nav.fixed a {
+     display: block;
+     padding: 0 15px;
+     color: #444;
+ }
+ ul.side-nav.fixed {
+     left: 0;
+     position: fixed;
+ }
+ ul.side-nav.fixed.right-aligned {
+     will-change: right;
+     right: 0;
+     left: auto;
+ }
+ @media only screen and (max-width: 992px) {
+     ul.side-nav.fixed {
+         left: -250px;
+     }
+     ul.side-nav.fixed.right-aligned {
+         right: -250px;
+         left: auto;
+     }
+ }
+ ul.side-nav .collapsible-body li.active, ul.side-nav.fixed .collapsible-body li.active {
+     background-color: #ee6e73;
+ }
+ ul.side-nav .collapsible-body li.active a, ul.side-nav.fixed .collapsible-body li.active a {
+     color: #fff;
+ }
+ @media only screen and (max-width: 1000px) {
+     header, main, footer, section {
+         padding-left: 0px;
+     }
+     section {
+         padding: 20px;
+     }
+ }

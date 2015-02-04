@@ -9,9 +9,9 @@
 		<!-- section -->
 		<section>
 			<!-- Posts ophalen -->
-			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-			<?php get_template_part('loop'); ?>
-			<?php get_template_part('pagination'); ?>
+			<h1><?php echo get_bloginfo( 'name' ); ?></h1>
+			<h3><?php echo bloginfo('description'); ?></h3>
+			<?php // get_template_part('loop'); get_template_part('pagination'); ?>
 		</section>
 		<!-- /section -->
 		</div>

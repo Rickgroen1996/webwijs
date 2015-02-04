@@ -13,14 +13,9 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/materialize.min.js"></script>
+
 		<?php wp_head(); ?>
-		<script>
-       	conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
-        <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css"/>
 
 	</head>
@@ -35,12 +30,11 @@
    					<aside class="sidebar" role="complementary">
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-						
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Logo" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Logo" class="logo-img">
 						</a>
 					</div>
 						<div class="sidebar-widget">
-							<?php echo wp_list_categories(); ?>
+							<?php wp_list_categories('title_li='); ?>
 						</div>
 
 						<div class="sidebar-widget">
