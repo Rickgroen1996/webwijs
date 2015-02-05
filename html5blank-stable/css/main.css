@@ -119,3 +119,10 @@
          padding: 20px;
      }
  }
+
+
+ /* Categorie page */
+
+ article.post p {
+ 	display: none;
+ }
