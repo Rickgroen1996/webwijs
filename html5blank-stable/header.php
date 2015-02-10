@@ -13,7 +13,6 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/materialize.min.js"></script>
-
 		<?php wp_head(); ?>
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css"/>
@@ -26,7 +25,10 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-				<ul id="slide-out" class="side-nav fixed">
+				<div id="overlay">
+
+				</div>
+				<ul onclick="menuHide()" id="slide-out" class="side-nav fixed">
    					<aside class="sidebar" role="complementary">
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -42,8 +44,8 @@
 						</div>
 
 					</aside>
-					</ul>
-					
+				</ul>
+
 			</header>
 
 					

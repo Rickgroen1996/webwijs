@@ -1,23 +1,61 @@
  /*---------------------------------------------------Algemeen---------------------------------------------------*/
- 
+ @import url(http://fonts.googleapis.com/css?family=Lato);
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans);
  * {
      padding: 0;
      margin: 0;
- }
+  }
  section {
      padding-left: 50px;
  }
- header, main, footer {
+ header, main, footer, .row {
      padding-left: 240px;
  }
+ p {
+ 	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+ }
+ h1,h2,h3,h4,h5,h6 {
+ 	font-family: 'Lato', sans-serif;
+ }
  /*------------------------------------------------Menu aan zijkant---------------------------------------------- */
- .button-collapse {
+ .menu-button {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    
+    padding: 0;
      display: none;
  }
+
+label {
+    font-size: 20px;
+    color: white;
+}
+
+
 .categories {
 	font-size: 20px;
 }
+ #overlay {
+        display: none;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        left: 0;
+        top: 0;
+        z-index: 998;
+        background-color: rgba(180,180,180, .78);
+    }
  @media only screen and (max-width: 992px) {
+
+   .menu-button {
+        display: block;
+        left: 0;
+        text-align: center;
+        z-index: 0;
+    }
+
      ul.side-nav {
          position: fixed;
          width: 240px;
@@ -30,6 +68,7 @@
          z-index: 999;
          will-change: left;
      }
+   
      ul.side-nav.right-aligned {
          will-change: right;
          right: -250px;
@@ -104,7 +143,7 @@
          right: -250px;
          left: auto;
      }
- }
+}
  ul.side-nav .collapsible-body li.active, ul.side-nav.fixed .collapsible-body li.active {
      background-color: #ee6e73;
  }
@@ -112,7 +151,7 @@
      color: #fff;
  }
  @media only screen and (max-width: 1000px) {
-     header, main, footer, section {
+     header, main, footer, section, .row {
          padding-left: 0px;
      }
      section {
@@ -121,8 +160,14 @@
  }
 
 
- /* Categorie page */
+ /* ------------------------------------------------ Categorie page -----------------------------------------*/
 
  article.post p {
  	display: none;
+ }
+
+ /*------------------------------------------------ Footer ----------------------------------------------*/
+
+ footer {
+ 	color: white;
  }

@@ -3,6 +3,9 @@
 <main role="main">
 	<div class="content">
 		<nav class="nav" role="navigation">
+			<div class="menu-button">
+				<a href="#" onclick="menuToggle()">Menu</a>  
+			</div>
 			<!-- Navigation rechtboven -->
 			<?php wp_nav_menu(); ?>
 		</nav>
@@ -62,5 +65,12 @@
 	</main>
 
 <?php get_sidebar(); ?>
+<script>
 
+function menuToggle(){
+	document.getElementById('slide-out').style.left = '0';
+	document.getElementById('overlay').style.display = 'block';
+}
+
+</script>
 <?php get_footer(); ?>

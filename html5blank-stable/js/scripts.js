@@ -1,11 +1,7 @@
-(function ($, root, undefined) {
+
+	function menuToggle(){
+		document.getElementById('slide-out').style.left = '0';
+		document.getElementById('overlay').style.display = 'block';
+	}
 	
-	$(function () {
-		
-		'use strict';
-		
-		// DOM ready, take it away
-		
-	});
-	
-})(jQuery, this);
+

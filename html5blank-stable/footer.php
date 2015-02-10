@@ -1,4 +1,6 @@
 			<!-- footer -->
+			<div class="row">
+      			
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
@@ -10,7 +12,7 @@
 
 			</footer>
 			<!-- /footer -->
-
+			</div>
 		</div>
 		<!-- /wrapper -->
 
