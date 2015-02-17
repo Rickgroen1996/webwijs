@@ -22,7 +22,7 @@
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
+<?php get_footer(); ?>
 <script>
 
 function menuToggle(){
@@ -31,4 +31,4 @@ function menuToggle(){
 }
 
 </script>
-<?php get_footer(); ?>
+

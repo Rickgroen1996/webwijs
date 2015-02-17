@@ -165,9 +165,17 @@ label {
  article.post p {
  	display: none;
  }
+ section {
+    overflow: hidden;
+ }
 
  /*------------------------------------------------ Footer ----------------------------------------------*/
 
- footer {
- 	color: white;
- }
+ footer.page-footer {
+    color: white;
+ 	margin-top: 100px;
+    background-color: #59ABE3;
+}
+.footer-links li a {
+    color: white;
+}
