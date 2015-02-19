@@ -12,10 +12,13 @@
 		<!-- section -->
 		<section>
 
-			<!--<h1><?php _e( 'Categorie ', 'html5blank' ); single_cat_title(); ?></h1>-->
+			<h1><?php _e(''); single_cat_title(); ?></h1>
 
-			<?php get_template_part('loop'); ?>
-			<p><?php the_content(); ?></p>
+			<?php //get_template_part('loop'); ?>
+			<p><?php query_posts('cat=1');
+while (have_posts()) : the_post();
+the_content();
+endwhile; ?></p>
 			
 
 		</section>
@@ -23,12 +26,5 @@
 	</main>
 
 <?php get_footer(); ?>
-<script>
 
-function menuToggle(){
-	document.getElementById('slide-out').style.left = '0';
-	document.getElementById('overlay').style.display = 'block';
-}
-
-</script>
 

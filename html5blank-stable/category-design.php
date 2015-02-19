@@ -1,3 +1,8 @@
+<?php
+/*
+* Category Template: Design
+*/
+?>
 <!-- Get header, is eigenlijk de balk aan de zijkant -->
 <?php get_header(); ?> 
 <main role="main">
@@ -11,15 +16,22 @@
 		</nav>
 		<!-- section -->
 		<section>
-			<!-- Posts ophalen -->
-			<h1><?php echo get_bloginfo( 'name' ); ?></h1>
-			<h3><?php echo bloginfo('description'); ?></h3>
-			<?php // get_template_part('loop'); get_template_part('pagination'); ?>
+
+			<h1><?php _e(''); single_cat_title(); ?></h1>
+
+			<?php //get_template_part('loop'); ?>
+			<p><?php query_posts('cat=3');
+while (have_posts()) : the_post();
+the_content();
+endwhile; ?></p>
+			
+
 		</section>
 		<!-- /section -->
-		</div>
 	</main>
-	
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+
+
+?>

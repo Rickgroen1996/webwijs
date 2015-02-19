@@ -25,10 +25,10 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-				<div id="overlay">
+				<div onclick="menuHide()" id="overlay">
 
 				</div>
-				<ul onclick="menuHide()" id="slide-out" class="side-nav fixed">
+				<ul  id="slide-out" class="side-nav fixed">
    					<aside class="sidebar" role="complementary">
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">

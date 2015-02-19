@@ -162,7 +162,7 @@ label {
 
  /* ------------------------------------------------ Categorie page -----------------------------------------*/
 
- article.post p {
+.view-article {
  	display: none;
  }
  section {

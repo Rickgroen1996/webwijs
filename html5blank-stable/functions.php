@@ -115,9 +115,6 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
-    wp_enqueue_style('normalize'); // Enqueue it!
-
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
 }
@@ -449,4 +446,40 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+
+
+add_action('init', 'portfolio_register');
+ 
+function portfolio_register() {
+ 
+    $labels = array(
+        'name' => _x('My Portfolio', 'post type general name'),
+        'singular_name' => _x('Portfolio Item', 'post type singular name'),
+        'add_new' => _x('Add New', 'portfolio item'),
+        'add_new_item' => __('Add New Portfolio Item'),
+        'edit_item' => __('Edit Portfolio Item'),
+        'new_item' => __('New Portfolio Item'),
+        'view_item' => __('View Portfolio Item'),
+        'search_items' => __('Search Portfolio'),
+        'not_found' =>  __('Nothing found'),
+        'not_found_in_trash' => __('Nothing found in Trash'),
+        'parent_item_colon' => ''
+    );
+ 
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'menu_icon' => get_stylesheet_directory_uri() . '/article16.png',
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array('title','editor','thumbnail')
+      ); 
+ 
+    register_post_type( 'portfolio' , $args );
+}
 ?>

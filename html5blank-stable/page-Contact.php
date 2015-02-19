@@ -1,5 +1,5 @@
 <!-- Get header, is eigenlijk de balk aan de zijkant -->
-<?php get_header(); ?> 
+<?php /* Template Name: Contact template */ get_header(); ?> 
 <main role="main">
 	<div class="content">
 		<nav class="nav" role="navigation">
@@ -16,14 +16,8 @@
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 				<?php the_content(); ?>
-
-				
 				<br class="clear">
-
-				
-
 			</article>
 			<!-- /article -->
 
@@ -43,6 +37,7 @@
 
 		</section>
 		</div>
+		
 		<!-- /section -->
 	</main>
 
