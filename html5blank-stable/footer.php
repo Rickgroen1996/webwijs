@@ -39,7 +39,7 @@
 			document.getElementById('slide-out').style.left = '-250px';
 			document.getElementById('overlay').style.display = 'none';
 		}
-
+		
 </script>
 		<?php wp_footer(); ?>
 	</body>

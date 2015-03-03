@@ -19,7 +19,7 @@
  	font-family: 'Lato', sans-serif;
  }
  /*------------------------------------------------Menu aan zijkant---------------------------------------------- */
- .menu-button {
+.menu-button {
     position: absolute;
     color: #fff;
     display: inline-block;
@@ -150,6 +150,26 @@ label {
  ul.side-nav .collapsible-body li.active a, ul.side-nav.fixed .collapsible-body li.active a {
      color: #fff;
  }
+  .current-cat {
+    background-color: #59ABE3;
+    
+ }
+ .current-cat > a {
+    color: #fff !important;
+ }
+ .current-cat:hover {
+    background-color: #59ABE3 !important;
+    color: #fff !important;
+ }
+
+/* ----------------------------------------------- Contact ---------------------------------------------*/
+
+ .contactform {
+    width: 50%;
+ }
+
+
+ 
  @media only screen and (max-width: 1000px) {
      header, main, footer, section, .row {
          padding-left: 0px;
@@ -157,6 +177,10 @@ label {
      section {
          padding: 20px;
      }
+     .contactform {
+        width: 100%;
+    }
+
  }
 
 
@@ -168,6 +192,9 @@ label {
  section {
     overflow: hidden;
  }
+
+
+ 
 
  /*------------------------------------------------ Footer ----------------------------------------------*/
 
