@@ -31,7 +31,3 @@ endwhile; ?></p>
 	</main>
 
 <?php get_footer(); ?>
-
-
-
-?>
