@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/materialize.min.js"></script>
+      	
 		<?php wp_head(); ?>
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/materialize.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.css"/>
@@ -39,9 +39,6 @@
 							<?php wp_list_categories('title_li='); ?>
 						</div>
 
-						<div class="sidebar-widget">
-							<?php //if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-						</div>
 
 					</aside>
 				</ul>

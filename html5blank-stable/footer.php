@@ -31,17 +31,21 @@
 		<!-- /wrapper -->
 		<script>
 
-		function menuToggle(){
-			document.getElementById('slide-out').style.left = '0';
-			document.getElementById('overlay').style.display = 'block';
-		}
-		function menuHide(){
-			document.getElementById('slide-out').style.left = '-250px';
-			document.getElementById('overlay').style.display = 'none';
-		}
-
-</script>
+			function menuToggle(){
+				document.getElementById('slide-out').style.left = '0';
+				document.getElementById('overlay').style.display = 'block';
+			}
+			function menuHide(){
+				document.getElementById('slide-out').style.left = '-250px';
+				document.getElementById('overlay').style.display = 'none';
+			}
+			var height = $(window).height();
+			var scrollTop = $(window).scrollTop();
+			console.log(scrollTop);
+		</script>
+		
 		<?php wp_footer(); ?>
+		
 	</body>
 	
 </html>
